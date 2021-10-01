@@ -1,0 +1,7 @@
+{
+  "name": "Clubify Landing",
+  "integrations": {
+    "capacitor": {}
+  },
+  "type": "angular"
+}
