@@ -1,0 +1,72 @@
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="1395" height="130" viewBox="0 0 1395 130">
+  <defs>
+    <filter id="Rectángulo_320" x="0" y="0" width="525" height="130" filterUnits="userSpaceOnUse">
+      <feOffset input="SourceAlpha"/>
+      <feGaussianBlur stdDeviation="9" result="blur"/>
+      <feFlood flood-opacity="0.2"/>
+      <feComposite operator="in" in2="blur"/>
+      <feComposite in="SourceGraphic"/>
+    </filter>
+    <filter id="Rectángulo_321" x="512" y="0" width="471" height="130" filterUnits="userSpaceOnUse">
+      <feOffset input="SourceAlpha"/>
+      <feGaussianBlur stdDeviation="9" result="blur-2"/>
+      <feFlood flood-opacity="0.2"/>
+      <feComposite operator="in" in2="blur-2"/>
+      <feComposite in="SourceGraphic"/>
+    </filter>
+    <filter id="Rectángulo_326" x="968" y="0" width="427" height="130" filterUnits="userSpaceOnUse">
+      <feOffset input="SourceAlpha"/>
+      <feGaussianBlur stdDeviation="9" result="blur-3"/>
+      <feFlood flood-opacity="0.2"/>
+      <feComposite operator="in" in2="blur-3"/>
+      <feComposite in="SourceGraphic"/>
+    </filter>
+  </defs>
+  <g id="Grupo_1353" data-name="Grupo 1353" transform="translate(-263 -4309)">
+    <g id="Grupo_1296" data-name="Grupo 1296" transform="translate(290 4336)">
+      <g transform="matrix(1, 0, 0, 1, -27, -27)" filter="url(#Rectángulo_320)">
+        <g id="Rectángulo_320-2" data-name="Rectángulo 320" transform="translate(27 27)" fill="#fff" stroke="#dedede" stroke-width="1">
+          <rect width="471" height="76" rx="38" stroke="none"/>
+          <rect x="0.5" y="0.5" width="470" height="75" rx="37.5" fill="none"/>
+        </g>
+      </g>
+      <g id="Grupo_1263" data-name="Grupo 1263" transform="translate(60.31 18.075)">
+        <text id="Módulo_de_autenticación" data-name="Módulo de autenticación" transform="translate(57.403 29.925)" fill="#232323" font-size="28" font-family="SFProDisplay-Medium, SF Pro Display" font-weight="500" letter-spacing="0.015em"><tspan x="0" y="0">Módulo de autenticación</tspan></text>
+        <g id="Grupo_1301" data-name="Grupo 1301">
+          <g id="Grupo_1300" data-name="Grupo 1300">
+            <g id="Grupo_1299" data-name="Grupo 1299">
+              <ellipse id="Elipse_75" data-name="Elipse 75" cx="1.626" cy="1.22" rx="1.626" ry="1.22" transform="translate(22.157 22.767)" fill="#232323"/>
+              <path id="Trazado_5452" data-name="Trazado 5452" d="M61.907,25.3a1.4,1.4,0,0,0,1.4-1.4V18.727a5.6,5.6,0,0,0-5.59-5.59h-1.68V8.208a8.387,8.387,0,0,0-16.77,0v4.929H37.59A5.6,5.6,0,0,0,32,18.727v11.46a5.6,5.6,0,0,0,5.59,5.59H57.715a5.6,5.6,0,0,0,5.59-5.59,1.4,1.4,0,1,0-2.8,0,2.8,2.8,0,0,1-2.8,2.8H37.59a2.8,2.8,0,0,1-2.8-2.8V18.727a2.8,2.8,0,0,1,2.8-2.8H57.715a2.8,2.8,0,0,1,2.8,2.8V23.9A1.4,1.4,0,0,0,61.907,25.3ZM53.24,13.137H42.06V8.208a5.593,5.593,0,0,1,11.18,0Z" transform="translate(-32)" fill="#232323"/>
+              <ellipse id="Elipse_76" data-name="Elipse 76" cx="1.626" cy="1.22" rx="1.626" ry="1.22" transform="translate(11.587 22.767)" fill="#232323"/>
+              <circle id="Elipse_77" data-name="Elipse 77" cx="1.22" cy="1.22" r="1.22" transform="translate(6.708 22.767)" fill="#232323"/>
+              <circle id="Elipse_78" data-name="Elipse 78" cx="1.22" cy="1.22" r="1.22" transform="translate(17.279 22.767)" fill="#232323"/>
+            </g>
+          </g>
+        </g>
+      </g>
+    </g>
+    <g id="Grupo_1297" data-name="Grupo 1297" transform="translate(802.107 4336)">
+      <g transform="matrix(1, 0, 0, 1, -539.11, -27)" filter="url(#Rectángulo_321)">
+        <g id="Rectángulo_321-2" data-name="Rectángulo 321" transform="translate(539 27)" fill="#fff" stroke="#dedede" stroke-width="1">
+          <rect width="417" height="76" rx="38" stroke="none"/>
+          <rect x="0.5" y="0.5" width="416" height="75" rx="37.5" fill="none"/>
+        </g>
+      </g>
+      <text id="Formulario_de_registro" data-name="Formulario de registro" transform="translate(103.25 48)" fill="#232323" font-size="28" font-family="SFProDisplay-Medium, SF Pro Display" font-weight="500" letter-spacing="0.015em"><tspan x="0" y="0">Formulario de registro</tspan></text>
+      <path id="Trazado_5453" data-name="Trazado 5453" d="M37.837,36.519A1.484,1.484,0,0,1,36.352,38H32.938A5.945,5.945,0,0,1,27,32.066V5.938A5.945,5.945,0,0,1,32.938,0H51.19a5.945,5.945,0,0,1,5.938,5.938v8.833a1.485,1.485,0,0,1-2.969,0V5.938A2.973,2.973,0,0,0,51.19,2.969H32.938a2.973,2.973,0,0,0-2.969,2.969V32.066a2.973,2.973,0,0,0,2.969,2.969h3.414A1.484,1.484,0,0,1,37.837,36.519ZM51.189,10.392A1.484,1.484,0,0,0,49.7,8.907H34.414a1.485,1.485,0,1,0,0,2.969H49.7A1.484,1.484,0,0,0,51.189,10.392ZM45.26,16.33a1.484,1.484,0,0,0-1.485-1.485H34.414a1.485,1.485,0,1,0,0,2.969h9.361A1.484,1.484,0,0,0,45.26,16.33ZM34.414,20.783a1.485,1.485,0,1,0,0,2.969h6.169a1.485,1.485,0,1,0,0-2.969ZM60.313,36.9A2.972,2.972,0,0,1,58,38H43.5a3,3,0,0,1-2.931-3.618,10.459,10.459,0,0,1,3.577-5.919,10.354,10.354,0,0,1,2.258-1.417,5.79,5.79,0,1,1,8.69,0,10.343,10.343,0,0,1,2.258,1.417A10.462,10.462,0,0,1,60.9,34.248c.012.039.021.079.03.119A3.025,3.025,0,0,1,60.313,36.9ZM47.932,23.23a2.821,2.821,0,1,0,2.821-2.821A2.824,2.824,0,0,0,47.932,23.23ZM58.026,34.993v0a7.426,7.426,0,0,0-14.545,0,.038.038,0,0,0,.016.044H58A.071.071,0,0,0,58.026,34.993Z" transform="translate(19.923 18.999)" fill="#232323"/>
+    </g>
+    <g id="Grupo_1311" data-name="Grupo 1311" transform="translate(1258 4336)">
+      <g transform="matrix(1, 0, 0, 1, -995, -27)" filter="url(#Rectángulo_326)">
+        <g id="Rectángulo_326-2" data-name="Rectángulo 326" transform="translate(995 27)" fill="#fff" stroke="#dedede" stroke-width="1">
+          <rect width="373" height="76" rx="38" stroke="none"/>
+          <rect x="0.5" y="0.5" width="372" height="75" rx="37.5" fill="none"/>
+        </g>
+      </g>
+      <text id="Plataforma_e-Club" data-name="Plataforma e-Club" transform="translate(107 46.617)" fill="#232323" font-size="28" font-family="SFProDisplay-Medium, SF Pro Display" font-weight="500" letter-spacing="0.015em"><tspan x="0" y="0">Plataforma e-Club</tspan></text>
+      <g id="Computer" transform="translate(45.619 21.173)">
+        <path id="Trazado_5450" data-name="Trazado 5450" d="M49.143,49.235H19.013A3.017,3.017,0,0,0,16,52.248v20.4a3.017,3.017,0,0,0,3.013,3.013H28.99l-1.356,3.616h-1.39a1.808,1.808,0,0,0-1.808,1.808v1.205a.6.6,0,0,0,.6.6H43.117a.6.6,0,0,0,.6-.6V81.08a1.808,1.808,0,0,0-1.808-1.808h-1.39l-1.356-3.616h9.977a3.017,3.017,0,0,0,3.013-3.013v-20.4A3.017,3.017,0,0,0,49.143,49.235ZM19.013,50.44h30.13a1.808,1.808,0,0,1,1.808,1.808V68.425H17.205V52.248A1.808,1.808,0,0,1,19.013,50.44Zm23.5,30.64v.6H25.642v-.6a.6.6,0,0,1,.6-.6H41.912A.6.6,0,0,1,42.515,81.08Zm-3.28-1.808H28.922l1.356-3.616h7.6Zm9.909-4.821H19.013a1.808,1.808,0,0,1-1.808-1.808V69.631H50.951v3.013A1.808,1.808,0,0,1,49.143,74.451Z" transform="translate(-16 -49.235)" fill="#232323"/>
+        <path id="Trazado_5451" data-name="Trazado 5451" d="M233.808,328a1.808,1.808,0,1,0,1.808,1.808A1.808,1.808,0,0,0,233.808,328Zm0,2.41a.6.6,0,1,1,.6-.6A.6.6,0,0,1,233.808,330.41Z" transform="translate(-215.73 -307.002)" fill="#232323"/>
+      </g>
+    </g>
+  </g>
+</svg>

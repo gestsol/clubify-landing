@@ -1,4 +1,5 @@
-import { Component } from '@angular/core';
+import { Component, ViewChild } from '@angular/core';
+import { IonContent } from '@ionic/angular';
 
 @Component({
   selector: 'app-home',
@@ -7,6 +8,29 @@ import { Component } from '@angular/core';
 })
 export class HomePage {
 
-  constructor() {}
+  @ViewChild(IonContent, { static: false }) content: IonContent;
+
+  constructor() {
+  }
+
+  ngOnInit(){
+
+  }
+
+  logScrolling(event){
+    
+    let mybutton = document.getElementById("btn-scroll");
+
+    if (event.detail.scrollTop > 500) mybutton.style.display = "block";
+    else mybutton.style.display = "none";
+    
+  }
+
+  scrollToTop() {
+    this.content.scrollToTop(1000);
+  }
+
+
+
 
 }

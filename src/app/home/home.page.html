@@ -1,20 +1,114 @@
-<ion-header [translucent]="true">
-  <ion-toolbar>
-    <ion-title>
-      Blank
-    </ion-title>
-  </ion-toolbar>
-</ion-header>
+<ion-content [fullscreen]="true" [scrollEvents]="true" (ionScroll)="logScrolling($event)">
 
-<ion-content [fullscreen]="true">
-  <ion-header collapse="condense">
-    <ion-toolbar>
-      <ion-title size="large">Blank</ion-title>
-    </ion-toolbar>
-  </ion-header>
 
-  <div id="container">
-    <strong>Ready to create an app?</strong>
-    <p>Start with Ionic <a target="_blank" rel="noopener noreferrer" href="https://ionicframework.com/docs/components">UI Components</a></p>
-  </div>
+    <nav class="navbar navbar-expand-md navbar-light fixed-top bg-blur">
+      <div class="container-fluid px-5">
+        <a class="navbar-brand"  href="#"><img alt="link" class="img-fluid " src="assets/images/clubify.svg" style="height: 40px;"></a>
+        <button class="navbar-toggler collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#navbarCollapse" aria-controls="navbarCollapse" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="navbar-collapse collapse w-100" id="navbarCollapse" >
+          <ul class="navbar-nav me-auto mb-2 mb-md-0  w-100 d-flex d-flex justify-content-end">
+            <li class="nav-item">
+              <a class="nav-link active" aria-current="page" href="#"><strong>Beneficios</strong> </a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#"><strong>Servicios</strong> </a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#"> <strong>Industrias</strong> </a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#"><strong>Nosotros</strong> </a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#"><strong>Contáctanos</strong> </a>
+            </li>
+
+          </ul>
+          <!-- <form class="d-flex">
+            <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
+            <button class="btn btn-outline-success" type="submit">Search</button>
+          </form> -->
+        </div>
+      </div>
+    </nav>
+
+    <ion-grid>
+
+      <ion-row class="mt-5 pt-5 d-flex justify-content-between">
+
+        <ion-col [size]="12" [sizeMd]="12" [sizeLg]="10" [sizeXl]="4" class="d-flex align-items-center mx-md-5 mx-0" >
+
+          <div class="mx-md-5 mx-0">
+            <h1 style="color: #ED3F5C" class="mb-0"><strong>Inteligencia Artificial</strong> </h1>
+            <h1 class="mt-0 text-dark"><strong>aplicada a la lealtad de tus clientes</strong> </h1>
+    
+            <p >Usamos indicadores y algoritmos para crear un club con un mayor valor, sugiriendo "Cuándo y qué" cambios deben realizarse para crear una experiencia más eficiente y completa.</p>
+    
+            <ul class="main-description" style="padding-left: 0px!important;">
+              <li class="text-dark mark-1">Inteligencia de negocios</li>
+              <li class="text-dark mark-2">Diseño centrado en el usuario</li>
+              <li class="text-dark mark-3">Gestión y difusión de convenios customizados</li>
+            </ul>
+    
+            <ion-row class="d-flex justify-content-between">
+
+              <ion-col [size]="12" [sizeMd]="8" [sizeLg]="6" [sizeXl]="6" >
+                <button type="button" class="btn btn-danger px-5 py-3 mt-3" style="border-radius: 30px;"><strong>Contáctanos ahora</strong> </button>
+              </ion-col>
+              <ion-col [size]="12" [sizeMd]="8" [sizeLg]="6" [sizeXl]="6"  class="text-lg-end  text-start" >
+                <button type="button" class="btn btn-light px-5 py-3 mt-3" style="border-radius: 30px; border:  1px solid #C1C1C1;"><strong><p class="mb-0 px-3">Quienes somos</p></strong>  </button>
+              </ion-col>
+
+              
+      
+              
+            </ion-row>
+
+          </div>
+
+
+
+        </ion-col>
+        <ion-col [size]="12" [sizeMd]="12" [sizeLg]="10" [sizeXl]="6.5" class="mt-4 mt-md-0 p-0 text-end">
+          <img src="assets/images/pc-main-cutted.png"  alt="" srcset="">
+        </ion-col>
+        
+      </ion-row>
+
+      <ion-row class="mt-5 pt-5 ">
+        <ion-col [size]="12" class="text-center">
+          <p class="mb-0"><strong>COBERTURA EN TODO CHILE</strong> </p>
+          <h1 style="color: #ED3F5C" class="mt-0 mb-0"><strong>Más de 5000 beneficios exclusivos</strong> </h1>
+
+          <ion-row class="d-flex justify-content-center">
+            <ion-col [size]="12" [sizeMd]="12" [sizeLg]="8" [sizeXl]="3.5">
+              <p>Mes a mes contamos con nuevas marcas, beneficios y propuestas que nos permiten abarcar una gran variedad de público objetivo</p>
+            </ion-col>
+          </ion-row>
+         
+
+        </ion-col>
+      </ion-row>
+
+      <ion-row>
+        <ion-col size="12">
+          <div style="overflow-x: auto;"><img src="assets/images/beneficios-1.png" alt="" style="width: 1920px!important;" class="benefits-logo"  srcset=""></div>
+          
+          <div style="overflow-x: auto;" ><img src="assets/images/beneficios-2.png" alt="" style="width: 1920px!important;" class="benefits-logo" srcset=""></div>
+          
+          <div style="overflow-x: auto;"><img src="assets/images/beneficios-3.png" alt="" style="width: 1920px!important;" class="benefits-logo"  srcset=""></div>
+          
+        </ion-col>
+      </ion-row>
+      
+
+
+
+    
+    <button (click)="scrollToTop()" id="btn-scroll" title="Go to top"><ion-icon size="large" name="chevron-up-outline"></ion-icon></button>
+      
+    </ion-grid>
+    
 </ion-content>
