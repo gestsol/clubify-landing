@@ -1,7 +1,7 @@
 <ion-content [fullscreen]="true" [scrollEvents]="true" (ionScroll)="logScrolling($event)">
 
 
-    <nav class="navbar navbar-expand-md navbar-light fixed-top bg-blur">
+    <nav class="navbar navbar-expand-md navbar-light fixed-top bg-blur" style="border-bottom: 1px solid #80808036;">
       <div class="container-fluid px-5">
         <a class="navbar-brand"  href="#"><img alt="link" class="img-fluid " src="assets/images/clubify.svg" style="height: 40px;"></a>
         <button class="navbar-toggler collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#navbarCollapse" aria-controls="navbarCollapse" aria-expanded="false" aria-label="Toggle navigation">
@@ -10,19 +10,19 @@
         <div class="navbar-collapse collapse w-100" id="navbarCollapse" >
           <ul class="navbar-nav me-auto mb-2 mb-md-0  w-100 d-flex d-flex justify-content-end">
             <li class="nav-item">
-              <a class="nav-link active" aria-current="page" href="#"><strong>Beneficios</strong> </a>
+              <a class="nav-link active" (click)="scrollToLabel('beneficios')" ><strong>Beneficios</strong> </a>
             </li>
             <li class="nav-item">
-              <a class="nav-link" href="#"><strong>Servicios</strong> </a>
+              <a class="nav-link" (click)="scrollToLabel('servicios')"><strong>Servicios</strong> </a>
             </li>
             <li class="nav-item">
-              <a class="nav-link" href="#"> <strong>Industrias</strong> </a>
+              <a class="nav-link" (click)="scrollToLabel('industrias')"> <strong>Industrias</strong> </a>
             </li>
             <li class="nav-item">
-              <a class="nav-link" href="#"><strong>Nosotros</strong> </a>
+              <a class="nav-link" (click)="scrollToLabel('nosotros')"><strong>Nosotros</strong> </a>
             </li>
             <li class="nav-item">
-              <a class="nav-link" href="#"><strong>Contáctanos</strong> </a>
+              <a class="nav-link" (click)="scrollToLabel('contactanos')"><strong>Contáctanos</strong> </a>
             </li>
 
           </ul>
@@ -55,10 +55,10 @@
             <ion-row class="d-flex justify-content-between">
 
               <ion-col [size]="12" [sizeMd]="8" [sizeLg]="6" [sizeXl]="6" >
-                <button type="button" class="btn btn-danger px-5 py-3 mt-3" style="border-radius: 30px;"><strong>Contáctanos ahora</strong> </button>
+                <button type="button" class="btn btn-danger px-5 py-3 mt-3 btn-description" style="border-radius: 30px;"><strong>Contáctanos ahora</strong> </button>
               </ion-col>
               <ion-col [size]="12" [sizeMd]="8" [sizeLg]="6" [sizeXl]="6"  class="text-lg-end  text-start" >
-                <button type="button" class="btn btn-light px-5 py-3 mt-3" style="border-radius: 30px; border:  1px solid #C1C1C1;"><strong><p class="mb-0 px-3">Quienes somos</p></strong>  </button>
+                <button type="button" class="btn btn-light px-5 py-3 mt-3 btn-description" style="border-radius: 30px; border:  1px solid #C1C1C1;"><strong><p class="mb-0 px-3">Quienes somos</p></strong>  </button>
               </ion-col>
 
               
@@ -77,8 +77,9 @@
         
       </ion-row>
 
+      <div id="beneficios"></div>
       <ion-row class="mt-5 pt-5 ">
-        <ion-col [size]="12" class="text-center">
+        <ion-col [size]="12" class="text-center" >
           <p class="mb-0"><strong>COBERTURA EN TODO CHILE</strong> </p>
           <h1 style="color: #ED3F5C" class="mt-0 mb-0"><strong>Más de 5000 beneficios exclusivos</strong> </h1>
 
@@ -92,7 +93,7 @@
         </ion-col>
       </ion-row>
 
-      <ion-row>
+      <ion-row class="mb-5">
         <ion-col size="12">
           <div style="overflow-x: auto;"><img src="assets/images/beneficios-1.png" alt="" style="width: 1920px!important;" class="benefits-logo"  srcset=""></div>
           
@@ -103,12 +104,359 @@
         </ion-col>
       </ion-row>
       
+      <br>
+      <div id="servicios"></div>
+      <ion-row class="mt-5 pt-5 ">
+        <ion-col [size]="12" class="text-center">
+          <p class="mb-0"><strong>CONOCE LA PLATAFORMA</strong> </p>
+          <h1 style="color: #ED3F5C" class="mt-0 mb-0"><strong>La gestión de convenios más completa</strong> </h1>
 
+          <ion-row class="d-flex justify-content-center">
+            <ion-col [size]="12" [sizeMd]="12" [sizeLg]="8" [sizeXl]="3.5">
+              <p>Nuestra Plataforma de Administración se compone de distintos módulos que te permitirán gestionar todas las funcionalidad de tu club de beneficios</p>
+            </ion-col>
+          </ion-row>
+         
+
+        </ion-col>
+      </ion-row>
+
+      <ion-row class=" mb-5 d-flex justify-content-around">
+        <ion-col [size]="12" [sizeSm]="6" [sizeMd]="6" [sizeLg]="4.5" [sizeXl]="2.5" class="">
+          <img src="assets/images/Grupo 902.svg" alt="" srcset="">
+        </ion-col>
+
+        <ion-col [size]="12" [sizeSm]="6" [sizeMd]="6" [sizeLg]="4.5" [sizeXl]="2.5" class="">
+          <img src="assets/images/Grupo 1207.svg" alt="" srcset="">
+        </ion-col>
+
+        <ion-col [size]="12" [sizeSm]="6" [sizeMd]="6" [sizeLg]="4.5" [sizeXl]="2.5" class="">
+          <img src="assets/images/Grupo 1208.svg" alt="" srcset="">
+        </ion-col>
+
+        <ion-col [size]="12" [sizeSm]="6" [sizeMd]="6" [sizeLg]="4.5" [sizeXl]="2.5" class="">
+          <img src="assets/images/Grupo 1209.svg" alt="" srcset="">
+        </ion-col>
+
+        <ion-col [size]="12" [sizeSm]="6" [sizeMd]="6" [sizeLg]="4.5" [sizeXl]="2.5" class="">
+          <img src="assets/images/Grupo 1210.svg" alt="" srcset="">
+        </ion-col>
+
+        <ion-col [size]="12" [sizeSm]="6" [sizeMd]="6" [sizeLg]="4.5" [sizeXl]="2.5" class="">
+          <img src="assets/images/Grupo 1211.svg" alt="" srcset="">
+        </ion-col>
+
+        <ion-col [size]="12" [sizeSm]="6" [sizeMd]="6" [sizeLg]="4.5" [sizeXl]="2.5" class="">
+          <img src="assets/images/Grupo 1212.svg" alt="" srcset="">
+        </ion-col>
+
+        <ion-col [size]="12" [sizeSm]="6" [sizeMd]="6" [sizeLg]="4.5" [sizeXl]="2.5" class="">
+          <img src="assets/images/Grupo 1213.svg" alt="" srcset="">
+        </ion-col>
+
+        <ion-col [size]="12" [sizeSm]="6" [sizeMd]="6" [sizeLg]="4.5" [sizeXl]="2.5" class="">
+          <img src="assets/images/Grupo 1214.svg" alt="" srcset="">
+        </ion-col>
+
+        <ion-col [size]="12" [sizeSm]="6" [sizeMd]="6" [sizeLg]="4.5" [sizeXl]="2.5" class="">
+          <img src="assets/images/Grupo 1215.svg" alt="" srcset="">
+        </ion-col>
+
+        <ion-col [size]="12" [sizeSm]="6" [sizeMd]="6" [sizeLg]="4.5" [sizeXl]="2.5" class="">
+          <img src="assets/images/Grupo 1216.svg" alt="" srcset="">
+        </ion-col>
+
+        <ion-col [size]="12" [sizeSm]="6" [sizeMd]="6" [sizeLg]="4.5" [sizeXl]="2.5" class="">
+          <img src="assets/images/Grupo 1218.svg" alt="" srcset="">
+        </ion-col>
+      </ion-row>
+
+      <div class="container-fluid">
+        <div class="row d-flex justify-content-around">
+          <div class="col-xl-6 col-lg-6  ">
+            <img src="assets/images/Grupo 1352.png" alt="" srcset="">
+          </div>
+          <div class="col-xl-5 col-lg-6 unset d-flex align-items-center">
+            <div class="mx-md-5 mx-0">
+                <p class="mb-0"><strong>CONOCE CLUBIFY</strong> </p>
+              <h1 style="color: #ED3F5C" class="my-1"><strong>Somos sinónimo de Loyalty Intelligence</strong> </h1>
+              <h2 class="mt-0 text-dark">La primera plataforma digital de beneficios basada en Inteligencia Artificial</h2>
+              <p >En nuestra plataforma tendrás acceso a:</p>
+      
+              <ul class="main-description-2" style="padding-left: 0px!important;">
+                <li class="text-dark mark-4">El Marketplace de beneficios más grande de Latinoamérica</li>
+                <li class="text-dark mark-5">Acceso a métricas de la plataforma, en todo lugar y momento</li>
+                <li class="text-dark mark-6">Enviar campañas de marketing directo a clientes según la segmentación de tus clientes.</li>
+              </ul>
+
+              <p>Todas tus acciones serán la base de conocimiento para que la plataforma aprenda y te sugiera cómo tomar las mejores decisiones.</p>
+      
+              <ion-row class="d-flex justify-content-between">
+
+                <ion-col [size]="12" >
+                  <button type="button" class="btn btn-danger px-5 py-3 mt-3" style="border-radius: 30px;"><strong>Contáctanos ahora</strong> </button>
+                </ion-col>
+                 
+              </ion-row>
+
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <ion-row class="mt-5 pt-5 ">
+        <ion-col [size]="12" class="text-center">
+          <p class="mb-0"><strong>EL NUEVO VÍNCULO CON TUS CLIENTES</strong> </p>
+          <h1 style="color: #ED3F5C" class="mt-0 mb-0"><strong>Una plataforma segura y funcional</strong> </h1>
+
+          <ion-row class="d-flex justify-content-center">
+            <ion-col [size]="12" [sizeMd]="12" [sizeLg]="8" [sizeXl]="3.5">
+              <p>Establece un lazo comunicacional eficaz y duradera, realizando estrategias de Marketing refuercen el vínculo cliente-empresa</p>
+            </ion-col>
+          </ion-row>
+         
+
+        </ion-col>
+      </ion-row>
+
+      <ion-row class="mb-5">
+        <ion-col size="12">
+          <div style="overflow-x: auto;" class="text-center"><img src="assets/images/Grupo 1313.svg" alt="" class="benefits-logo"  srcset=""></div>
+          
+          <div style="overflow-x: auto;" class="text-center" ><img src="assets/images/Grupo 1312.svg" alt="" class="benefits-logo" srcset=""></div>
+          
+          <div style="overflow-x: auto;" class="text-center"><img src="assets/images/Grupo 1353.svg" alt="" class="benefits-logo"  srcset=""></div>
+          
+        </ion-col>
+      </ion-row>
+
+      <div id="industrias"></div>
+      <ion-row class="mt-5 pt-5 ">
+        <ion-col [size]="12" class="text-center">
+          <h1 style="color: #ED3F5C" class="mt-0 mb-0"><strong>Industrias</strong> </h1>
+          <h4 class="mb-0 text-dark">Estas son algunas de las áreas que abarcan nuestros grupos de convenios </h4>
+        </ion-col>
+      </ion-row>
+
+
+      <div class="container-fluid my-4">
+        <div class="row d-flex justify-content-around pb-5">
+          <div class="col-xl-4 col-lg-4 col-md-12">
+
+            <div class="row d-flex justify-content-end mb-2">
+              <div class="col-xl-9 col-lg-9 d-flex align-items-center">
+                <div>
+                  <p class="mb-0 px-2"><strong>Banca y servicios financieros: </strong> </p>
+                  <p class="mb-0 px-2">La oportunidad de mantener tus ingresos seguros.</p>
+                </div>
+                <img src="assets/images/Grupo 982.png" alt="" width="150px" srcset="">
+              </div>
+            </div>
+
+            <div class="row d-flex justify-content-center mb-2">
+              <div class="col-xl-9 col-lg-9 d-flex align-items-center">
+                <div>
+                  <p class="mb-0 px-2"><strong>Alimentos y bebidas:  </strong> </p>
+                  <p class="mb-0 px-2">Complace tu paladar con las mejores comidas y bebidas.</p>
+                </div>
+                <img src="assets/images/Grupo 983.png " alt="" width="150px" srcset="">
+              </div>
+            </div>
+
+            <div class="row d-flex justify-content-center mb-2">
+              <div class="col-xl-9 col-lg-9 d-flex align-items-center">
+                <div>
+                  <p class="mb-0 px-2"><strong>Servicios básicos:   </strong> </p>
+                  <p class="mb-0 px-2">Más comodidad para todas tus necesidades.</p>
+                </div>
+                <img src="assets/images/Grupo 1220.png" alt="" width="150px" srcset="">
+              </div>
+            </div>
+
+            <div class="row d-flex justify-content-end mb-2">
+              <div class="col-xl-9 col-lg-9 d-flex align-items-center">
+                <div>
+                  <p class="mb-0 px-2"><strong>Telecomunicaciones:    </strong> </p>
+                  <p class="mb-0 px-2">Mantente conectado donde sea que estés.</p>
+                </div>
+                <img src="assets/images/Grupo 984.png" alt="" width="150px" srcset="">
+              </div>
+            </div>
+
+          </div>
+
+          <div class="col-xl-3 col-lg-3 col-md-12 text-center d-flex align-items-center">
+            <img src="assets/images/user-phone.png" class="" alt="" srcset="">
+          </div>
+          <div class="col-xl-4 col-lg-4 col-md-12">
+
+            <div class="row d-flex justify-content-start mb-2">
+              <div class="col-xl-9 col-lg-9 d-flex align-items-center">
+                <img src="assets/images/Grupo 1219.png" alt="" width="150px" srcset="">
+                <div>
+                  <p class="mb-0 px-2"><strong>Seguros: </strong> </p>
+                  <p class="mb-0 px-2">Cuida de ti y de los tuyos en todo momento.</p>
+                </div>
+              </div>
+            </div>
+
+            <div class="row d-flex justify-content-center mb-2">
+              <div class="col-xl-9 col-lg-9 d-flex align-items-center">
+                <img src="assets/images/Grupo 981.png " alt="" width="150px" srcset="">
+                <div>
+                  <p class="mb-0 px-2"><strong>Automotor:   </strong> </p>
+                  <p class="mb-0 px-2">Diagnóstico, mantenimiento y reparación de tu vehículo.</p>
+                </div>
+              </div>
+            </div>
+
+            <div class="row d-flex justify-content-center mb-2">
+              <div class="col-xl-9 col-lg-9 d-flex align-items-center">
+                <img src="assets/images/Grupo 985.png" alt="" width="150px" srcset="">
+                <div>
+                  <p class="mb-0 px-2"><strong>Transporte:  </strong> </p>
+                  <p class="mb-0 px-2">Viaja desde y hacia cualquier lugar con descuentos.</p>
+                </div>
+              </div>
+            </div>
+
+            <div class="row d-flex justify-content-start mb-2">
+              <div class="col-xl-9 col-lg-9 d-flex align-items-center">
+                <img src="assets/images/Grupo 1354.png" alt="" width="150px" srcset="">
+                <div>
+                  <p class="mb-0 px-2"><strong>Moda y lujo: </strong> </p>
+                  <p class="mb-0 px-2">Crea el armario de tus sueños.</p>
+                </div>
+              </div>
+            </div>
+
+
+          </div>
+        </div>
+      </div>
+
+      <div id="nosotros"></div>
+      <div class="container mt-5 mb-5">
+        <div class="row d-flex justify-content-between ">
+          <div class="col-xl-5 col-lg-5 text-center  ">
+            <img src="assets/images/Grupo 1357.png" alt="" srcset="">
+          </div>
+          <div class="col-xl-6 col-lg-6 d-flex align-items-center ">
+
+            <div>
+
+              <h1 style="color: #ED3F5C" class="mt-0 mb-0"><strong>Sobre nosotros</strong> </h1>
+              <h4 class=" my-2 text-dark">Más de 15 años creando vínculos inteligentes</h4>
+              <p class="">Somos la solución tecnológica que con una robusta Plataforma de Administración de Convenios, está orientada a la rapidez y eficiencia operacional; Asociada a la Inteligencia Artificial para detectar gustos e intereses de las personas, entregando un control completo de gestión y un valioso Business Inteligence. </p>
+
+              <div style="box-shadow: 0px 1px 20px #E9485959; border-radius: 15px;" class="d-flex align-items-center py-2 mb-4">
+                <img src="assets/images/tag.png" alt="">
+                <p class="mb-0 mx-4"><strong>Especializados en la creación y gestión de estrategias comunicacionales orientadas a la implementación de marketing directo</strong> </p>
+              </div>
+
+              <div style="box-shadow: 0px 1px 20px #E9485959; border-radius: 15px;" class="d-flex align-items-center py-2 mb-4">
+                <img src="assets/images/tag.png" alt="">
+                <p class="mb-0 mx-4"><strong>Integramos Inteligencia Artificial e indicadores especialos para obtener productos con un mayor nivel de usabilidad y adaptibilidad</strong> </p>
+              </div>
+
+            </div>
+
+          </div>
+        </div>
+      </div>
+
+      <div id="contactanos"></div>
+      <div style="background:#FDF6F0">
+        
+        <div class="container py-5" >
+          <div class="row py-5 d-flex justify-content-around">
+  
+            <div class="col-xl-4 col-lg-5 col-md-12 " style="background-color: #ffffff; box-shadow: 0px 1px 48px #00000038; border-radius: 15px; padding: 40px;">
+              <h2 style="color: #ED3F5C" class="mt-0 "><strong>Contáctanos hoy</strong> </h2>
+  
+              <form>
+                <div class="form-group">
+  
+                  <label>Nombre</label>
+                  <input type="text" class="form-control" placeholder="Nombre">
+  
+                  <label>Apellido</label>
+                  <input type="text" class="form-control" placeholder="Apellido">
+  
+                  <label>Correo electrónico</label>
+                  <input type="email" class="form-control" placeholder="Correo electrónico">
+  
+                  <label>Teléfono</label>
+                  <input type="text" class="form-control" placeholder="Teléfono">
+  
+                  <label >Mensaje</label>
+                 <textarea class="form-control" rows="4"></textarea>
+  
+                </div>
+  
+                <button type="button" class="btn btn-danger px-5 py-3 mt-3 w-100" style="border-radius: 30px;"><strong>Contáctar</strong> </button>
+  
+              </form>
+            </div>
+  
+            <div class="col-xl-6 col-lg-6 col-md-12 d-flex align-items-center">
+
+              <div class="text-dark">
+                <h1>Información de contacto</h1>
+                <h3 class="mb-0">Escríbenos</h3>
+                <p>correo@clubify.cl</p>
+
+                <h3 class="mb-0">Llámanos</h3>
+                <p>(+56 9) 1233 4567 / (+56 9) 1234 5678</p>
+
+                <h3 class="mb-0">Encuéntranos</h3>
+                <p>Direción 1234, Santiago, Región metropolitana, Chile</p>
+
+                <h1>Nuestras Redes Sociales</h1>
+                <div class="d-flex align-items-center">
+                  <img src="assets/images/Grupo 1163.svg" width="32px" class="m-2" alt="" srcset="">
+                  <img src="assets/images/Icon ionic-logo-facebook.svg" width="32px" class="m-2" alt="" srcset="">
+                  <img src="assets/images/Icon ionic-logo-twitter.svg" width="32px" class="m-2" alt="" srcset="">
+                  <img src="assets/images/Grupo 1162.svg" width="32px" class="m-2" alt="" srcset="">
+                </div>
+              </div>
+  
+            </div>
+  
+          </div>
+        </div>
+
+      </div>
+
+     
 
 
     
     <button (click)="scrollToTop()" id="btn-scroll" title="Go to top"><ion-icon size="large" name="chevron-up-outline"></ion-icon></button>
       
     </ion-grid>
+
+    <div class="bg-red">
+      <div class="container">
+        <div class="row py-4">
+          <div class="col-12 d-flex justify-content-center mt-3">
+            <div class="text-center">
+              <img src="assets/images/Grupo 964.svg" width="200px" class="mb-2" alt="" srcset="">
+              <p class="text-white">Fidelización inteligente</p>
+            </div>
+          </div>
+          <div class="col-12 d-flex justify-content-center my-3">
+            <div>
+              <img src="assets/images/Grupo 1164.svg" alt="" style="width: 32px;" class="mx-4" srcset="">
+              <img src="assets/images/Icon ionic-logo-facebook-1.svg" alt="" style="width: 32px;" class="mx-4" srcset="">
+              <img src="assets/images/Icon ionic-logo-twitter-1.svg" alt="" style="width: 32px;" class="mx-4" srcset="">
+              <img src="assets/images/Grupo 1165.svg" alt="" style="width: 32px;" class="mx-4" srcset="">
+
+            </div>
+          </div>
+        </div>
+      </div>
+
+    </div>
     
 </ion-content>

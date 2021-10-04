@@ -38,6 +38,18 @@ ul.main-description li:nth-child(3){
 }
 
 
+ul.main-description-2 li:nth-child(1){
+  background: url('/assets/images/mark-4.png') no-repeat left center;
+}
+
+ul.main-description-2 li:nth-child(2){
+  background: url('/assets/images/mark-5.png') no-repeat left center;
+}
+
+ul.main-description-2 li:nth-child(3){
+  background: url('/assets/images/mark-6.png') no-repeat left center;
+}
+
 #btn-scroll {
   display: none;/* Hidden by default */
   position: fixed; /* Fixed/sticky position */
@@ -46,7 +58,7 @@ ul.main-description li:nth-child(3){
   z-index: 99; /* Make sure it does not overlap */
   border: none; /* Remove borders */
   outline: none; /* Remove outline */
-  background-color: #E94859; /* Set a background color */
+  background-color: #ED3F5C; /* Set a background color */
   color: white; /* Text color */
   cursor: pointer; /* Add a mouse pointer on hover */
   padding: 15px; /* Some padding */
@@ -75,4 +87,18 @@ ul.main-description li:nth-child(3){
 }
 
 
+@media screen and (min-width: 1200px) and (max-width: 1650px){
+
+  .btn-description {
+    padding: 10px 20px!important;
+  }
+}
+
+
+@media (min-width: 768px){
+  .unset {
+      order: unset!important;
+  }
+
+}
 

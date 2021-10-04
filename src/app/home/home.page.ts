@@ -1,6 +1,6 @@
 import { Component, ViewChild } from '@angular/core';
 import { IonContent } from '@ionic/angular';
-
+declare var $:any;
 @Component({
   selector: 'app-home',
   templateUrl: 'home.page.html',
@@ -30,7 +30,11 @@ export class HomePage {
     this.content.scrollToTop(1000);
   }
 
-
+  scrollToLabel(label) {
+    $(".navbar-collapse").collapse('hide');
+    var titleELe = document.getElementById(label);
+    this.content.scrollToPoint(0, titleELe.offsetTop, 1000);
+  }
 
 
 }
