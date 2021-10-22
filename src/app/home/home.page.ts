@@ -84,7 +84,7 @@ export class HomePage {
         this.loading.dismiss()
       })
       
-      this.presentAlert()
+
 
     } catch (error) {
       alert('Ha sucedido un error enviando correo o mensaje')
