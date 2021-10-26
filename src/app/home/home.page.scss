@@ -1,17 +1,23 @@
 .nav-link {
-  padding: 10px 35px !important;
+  padding: 6px 34px !important;
   border-radius: 30px;
   color: #ed3f5c !important;
+  font-size: 22px!important;
 }
 
 .nav-item {
-  margin: 0px 10px;
+  margin: 0px 5px;
 }
 
 .navbar-light .navbar-nav .nav-link:focus,
 .navbar-light .navbar-nav .nav-link:hover {
   color: rgb(255, 255, 255) !important;
   background-color: #ed3f5c;
+  cursor: pointer;
+}
+
+.antitulo{
+  font-size: 20px!important;
 }
 
 /* .active{
@@ -19,6 +25,11 @@
 } */
 
 ul li {
+  padding: 3px 0px 3px 0px;
+  list-style: none;
+}
+
+ion-grid ul li {
   padding: 3px 0px 3px 30px;
   list-style: none;
 }
@@ -47,6 +58,81 @@ ul.main-description-2 li:nth-child(3) {
   background: url("/assets/images/mark-6.png") no-repeat left center;
 }
 
+
+ul.main-description-3 li:nth-child(1) {
+  background: url("/assets/images/marker-1.png") no-repeat left center;
+}
+
+ul.main-description-3 li:nth-child(2) {
+  background: url("/assets/images/marker-4.png") no-repeat left center;
+}
+
+ul.main-description-3 li:nth-child(3) {
+  background: url("/assets/images/marker-7.png") no-repeat left center;
+}
+
+ul.main-description-3 li:nth-child(4) {
+  background: url("/assets/images/marker-10.png") no-repeat left center;
+}
+
+
+ul.main-description-4 li:nth-child(1) {
+  background: url("/assets/images/marker-2.png") no-repeat left center;
+}
+
+ul.main-description-4 li:nth-child(2) {
+  background: url("/assets/images/marker-5.png") no-repeat left center;
+}
+
+ul.main-description-4 li:nth-child(3) {
+  background: url("/assets/images/marker-8.png") no-repeat left center;
+}
+
+ul.main-description-4 li:nth-child(4) {
+  background: url("/assets/images/marker-11.png") no-repeat left center;
+}
+
+
+ul.main-description-5 li:nth-child(1) {
+  background: url("/assets/images/marker-3.png") no-repeat left center;
+}
+
+ul.main-description-5 li:nth-child(2) {
+  background: url("/assets/images/marker-6.png") no-repeat left center;
+}
+
+ul.main-description-5 li:nth-child(3) {
+  background: url("/assets/images/marker-9.png") no-repeat left center;
+}
+
+
+
+
+ul.main-description-6 li:nth-child(1) {
+  background: url("/assets/images/camp-1.png") no-repeat left center;
+}
+
+ul.main-description-6 li:nth-child(2) {
+  background: url("/assets/images/camp-2.png") no-repeat left center;
+}
+
+ul.main-description-6 li:nth-child(3) {
+  background: url("/assets/images/camp-3.png") no-repeat left center;
+}
+
+ul.main-description-6 li:nth-child(4) {
+  background: url("/assets/images/camp-4.png") no-repeat left center;
+}
+
+ul.main-description-6 li:nth-child(5) {
+  background: url("/assets/images/camp-5.png") no-repeat left center;
+}
+
+ul.main-description-6 li:nth-child(6) {
+  background: url("/assets/images/camp-6.png") no-repeat left center;
+}
+
+
 #btn-scroll {
   display: none; /* Hidden by default */
   position: fixed; /* Fixed/sticky position */
@@ -59,9 +145,17 @@ ul.main-description-2 li:nth-child(3) {
   color: white; /* Text color */
   cursor: pointer; /* Add a mouse pointer on hover */
   padding: 15px; /* Some padding */
-  border-radius: 30px; /* Rounded corners */
+  border-radius: 35px; /* Rounded corners */
   font-size: 18px; /* Increase font size */
+  border: 2px solid white;
 }
+
+
+.btnScrollEnd{
+  bottom: 250px!important;
+}
+
+
 
 #btn-scroll:hover {
   background-color: #555; /* Add a dark-grey background on hover */
