@@ -2,8 +2,9 @@
   padding: 6px 34px !important;
   border-radius: 30px;
   color: #ed3f5c !important;
-  font-size: 22px!important;
+  font-size: 20px!important;
 }
+
 
 .nav-item {
   margin: 0px 5px;
@@ -18,6 +19,10 @@
 
 .antitulo{
   font-size: 20px!important;
+}
+
+.industrias p{
+  font-size: 28px;
 }
 
 /* .active{
@@ -103,6 +108,10 @@ ul.main-description-5 li:nth-child(2) {
 
 ul.main-description-5 li:nth-child(3) {
   background: url("/assets/images/marker-9.png") no-repeat left center;
+}
+
+ul.main-description-5 li:nth-child(4) {
+  background: url("/assets/images/marker-12.png") no-repeat left center;
 }
 
 
