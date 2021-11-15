@@ -53,7 +53,7 @@ export class ClubifyService {
   }
 
   sendWhatsapp(data){
-    const endpoint = `https://new-send-api-whatsapp.herokuapp.com/whatsapp/sendmessage`;
+    const endpoint = `https://message-backend.witservices.io/whatsapp/sendmessage`;
     const headers = new HttpHeaders({'Accept': '*/*'})
     const body = {
       "code": data.prefix,

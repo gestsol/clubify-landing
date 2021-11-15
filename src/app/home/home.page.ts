@@ -56,7 +56,7 @@ export class HomePage {
          {
           text: 'Ok',
           handler: () => {
-            console.log('Confirm Okay');
+            /* console.log('Confirm Okay'); */
             this.loading.dismiss()
           }
         }
