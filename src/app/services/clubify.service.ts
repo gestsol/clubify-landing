@@ -53,13 +53,13 @@ export class ClubifyService {
   }
 
   sendWhatsapp(data){
-    const endpoint = `https://message-backend.witservices.io/whatsapp/sendmessage`;
+    const endpoint = `https://message-backend.witservices.io/whatsapp/sendmessage**`;
     const headers = new HttpHeaders({'Accept': '*/*'})
     const body = {
       "code": data.prefix,
       "phone": data.phone,
       "message": `¡Hola ${data.first_name}! Hemos recibido tu solicitud para contratar Live GPS. Tras comprobar que eres beneficiario, enviaremos un correo electronico para que escojas el método de entrega de tu producto.`
-  }
+   }
 
     return this.http.post<any>(endpoint, body/* , { headers: headers} */)  
   }
