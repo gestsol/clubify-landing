@@ -12,11 +12,12 @@ export class ClubifyService {
   constructor(private http: HttpClient) {}
 
   sendMail(data){
-    const endpoint = `https://message-backend.gestsol.io/email/send-email`;
+    const endpoint = `https://message-backend.witservices.io/email/send-email`;
     const headers = new HttpHeaders({'Accept': '*/*'})
     const body = {
       to: `${data.email}`,
       subject: "Bienvenido a Clubify",
+      bcc: ['mmorales@wit.la', 'jmartinez@clubify.cl'],
       content: `<div style='display: flex!important;justify-content: center!important; '>
       <div>
         <div style='text-align: center!important;box-shadow: 0px 3px 6px #00000029!important;'>
@@ -41,12 +42,13 @@ export class ClubifyService {
           <br>
           <br>
           <a href='https://clubify-landing.netlify.app/home' target='_blank' style='text-decoration: none;'><span style='color: white;padding: 15px; background-color: #FF5021;box-shadow: 2px 2px 5px #7C290080;
-            border-radius: 10px;font-weight: bold;'>SOLICITAR GO! MOVIE</span> </a>
+            border-radius: 10px;font-weight: bold;'>SOLICITAR</span> </a>
       
         </div>
       </div>
     </div>
-  `
+  `  
+  
   }
 
     return this.http.post<any>(endpoint, body/*,  { headers: headers} */)  

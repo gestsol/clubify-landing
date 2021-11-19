@@ -40,7 +40,7 @@ export class HomePage {
 
   async presentLoading() {
     this.loading = await this.loadingController.create({
-      message: 'Cargando...',
+      message: 'Enviando...',
       mode:'md',
       /* duration:4000 */
     });
@@ -50,7 +50,7 @@ export class HomePage {
 
   async presentAlert() {
     const alert = await this.alertController.create({
-      header: 'Listo',
+      header: 'Clubify',
       message: 'Gracias por contactarnos!',
       buttons: [
          {
@@ -79,15 +79,17 @@ export class HomePage {
 
     try {
       
-      /* await this.clubifyService.sendMail(this.formGroup.value).toPromise().then((resp)=>{
+      await this.clubifyService.sendMail(this.formGroup.value).toPromise().then((resp)=>{
         console.log(resp)
-      })
-   */
-      await this.clubifyService.sendWhatsapp(this.formGroup.value).toPromise().then((resp)=>{
-        console.log(resp);
         this.presentAlert()
         this.loading.dismiss()
       })
+  
+      /* await this.clubifyService.sendWhatsapp(this.formGroup.value).toPromise().then((resp)=>{
+        console.log(resp);
+        this.presentAlert()
+        this.loading.dismiss()
+      }) */
       
 
 
